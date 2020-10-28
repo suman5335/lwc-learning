@@ -1,18 +1,17 @@
 <template>
-<!--<div class="slds-grid slds-gutters"> -->
-<div class="slds-col slds-size_1-of-3">
-    <img class="logo" src="https://i.pinimg.com/originals/1a/51/a3/1a51a38dc69b958999755c15c5dda05f.jpg"
-    />
+    <div class="slds-grid slds-gutters">
+<template for:each={sushantMovies} for:item="mov">
+    <div key={mov.name}>
+       <div class="slds-col">
+              <span>
+           <img src={mov.bannerImg}  width="500" height="500">
+           {mov.movieName}
+           {mov.Director}
+        
+    </span>
 </div>
-<div class="slds-col slds-size_2-of-3 slds-p-top_xx-large" >
-    <h1>Remembering Sushant Singh Rajput: 1986–Forever</h1>
+    </div>
+     
+</template>
 </div>
-        <c-movie-tile key={movies.movieName}
-
-                        sushant-movies={movies} 
-
-                        class="slds-col">
-        </c-movie-tile>
-    </template> 
-</div> 
 </template>
