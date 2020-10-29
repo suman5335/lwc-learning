@@ -2,11 +2,11 @@
 <lightning-card title="WeatherInfo">
 <lightning-layout > 
     <lightning-layout-item padding="around-small" size='10'>
-        <div  class="slds-align_absolute-center" style="height:5rem">
+        <div  class="slds-align_absolute-center">
         <lightning-input type="text" name="EnterCity" label="EnterCity" value={city} onchange={onCityChange}>
         </lightning-input>
     </div>
-    <div  class="slds-align_absolute-center" style="height:5rem">
+    <div  class="slds-align_absolute-center">
         <lightning-button variant="Get Info" label="Get Info" title="Get Info" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
     </div>
     </lightning-layout-item>
@@ -15,7 +15,7 @@
 <lightning-layout>
     <lightning-layout-item padding="around-small" size='10'>
         <div  class="slds-align_absolute-center" style="height:5rem">
-            <b>Temp is  {convertedTemp}</b>
+            <b>Temp is  {temperature}</b>
     </div>
     </lightning-layout-item>
 </lightning-layout>
