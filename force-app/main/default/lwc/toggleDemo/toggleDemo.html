@@ -1,0 +1,15 @@
+<template>
+    <div class="slds-box">
+        <lightning-card title="Template Toggle demo">
+            <div class="slds-m-around_medium">
+                <lightning-button variant="brand" label="Click Here For Result"  class="slds-m-left_x-small" onclick={show}></lightning-button>
+                <template if:false={toggleText}>
+                    <h1> This is the o/p text</h1>
+
+                </template>
+
+            </div>
+
+        </lightning-card>
+    </div>
+</template>

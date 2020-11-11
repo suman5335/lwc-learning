@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="show text on click of button">
+        <div class="slds-box header">
+        <lightning-button variant="brand" label="Click Here"  class="slds-m-left_x-small" onclick={show}></lightning-button>
+        <template if:true={showText} class="footer">
+            <h1>Data whcih is hided is shown</h1>
+        </template>
+        </div>
+    </lightning-card>    
+</template>
+<!-- if:true and flase are used to dispaly data based on reruirmwnt -->
